@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#060b18">
+<title>Caleb Wallin — Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="brand">Caleb Wallin</a>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="top" class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Software Developer</p>
+      <h1>I build small, focused apps end to end.</h1>
+      <p class="hero-sub">From a full desktop DAW with VST hosting to a gamified task tracker, I like taking
+        a project from idea to something that actually runs. Below is a selection of what I've been working on.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">See my work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="wrap">
+      <h2>About</h2>
+      <p class="about-lead">I'm a developer who likes shipping complete, working software rather than stopping at prototypes.
+        My projects range from a native audio workstation with out-of-process plugin hosting to full-stack web apps
+        that are live today, and a phone-first app designed around people who find productivity tools stressful.</p>
+      <p>Across all of them I care about the details that make software feel finished: handling failure
+        gracefully, protecting user data, writing tests for the parts that must be right, and designing with the
+        person using it in mind instead of adding complexity the project doesn't need.</p>
+
+      <div class="skills">
+        <div class="skill-group">
+          <h3>Full-stack web</h3>
+          <ul class="chips">
+            <li>TypeScript</li><li>React</li><li>Next.js</li><li>Vite</li><li>Tailwind CSS</li>
+            <li>Node.js</li><li>Express</li><li>REST APIs</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Data &amp; auth</h3>
+          <ul class="chips">
+            <li>SQLite</li><li>Postgres / Supabase</li><li>JWT &amp; sessions</li><li>bcrypt</li>
+            <li>File uploads</li><li>Email (SMTP)</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Systems &amp; audio</h3>
+          <ul class="chips">
+            <li>C++</li><li>JUCE</li><li>Real-time DSP</li><li>Multi-process architecture</li>
+            <li>VST3 / AU hosting</li><li>CMake</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>AI integration</h3>
+          <ul class="chips">
+            <li>Claude API</li><li>Vercel AI SDK</li><li>Schema-validated output (Zod)</li>
+            <li>Grounded generation</li><li>Human-in-the-loop design</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Mobile &amp; product</h3>
+          <ul class="chips">
+            <li>Capacitor (iOS / Android)</li><li>PWA</li><li>Local notifications</li>
+            <li>Gamification</li><li>Accessibility-minded UX</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Quality &amp; shipping</h3>
+          <ul class="chips">
+            <li>Vitest</li><li>Playwright</li><li>JUCE unit tests</li><li>SSRF-safe fetching</li>
+            <li>Railway deployment</li><li>Git</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="wrap">
+      <h2>Projects</h2>
+      <p class="section-sub">A mix of desktop, web, and mobile apps.</p>
+    </div>
+  </section>
+
+    <section class="project" id="project-1">
+      <div class="wrap project-inner">
+        <div class="project-text">
+          <span class="tag">Desktop · C++ · JUCE</span>
+          <h2>MiniDAW</h2>
+          <p class="project-desc">A digital audio workstation written from scratch in C++ and JUCE. It records, sequences, mixes and masters audio, MIDI and drum tracks, and hosts third-party VST3/AU plugins in a separate process so a crashing plugin can't take the project down with it.</p>
+          <ul class="feature-list">
+                <li>Multi-track audio, MIDI and drum-machine tracks with multi-clip timelines, comping, trim, fades and split</li>
+                <li>Piano roll with velocity, pitch-bend and CC lanes, plus a step-grid drum sequencer and a sampled-piano instrument</li>
+                <li>Per-track EQ, send/return buses, sidechain compression, and a master EQ, compressor and limiter with peak, RMS, true-peak and LUFS metering</li>
+                <li>Breakpoint automation for gain, pan, EQ and hosted plugin parameters, with MIDI-learn for hardware controllers</li>
+                <li>Out-of-process plugin hosting with crash recovery, plus tempo-following time-stretch, audio-to-MIDI and scale-snap pitch correction</li>
+                <li>Stem and mixdown export (WAV, AIFF, FLAC, Ogg, MP3), project save/load with undo/redo, and a JUCE unit-test suite</li>
+            </ul>
+        </div>
+        <div class="project-media"><img src="images/minidaw.png" alt="MiniDAW showing a drum step sequencer, a MIDI track, a per-track mixer with EQ, and the master compressor, limiter and meters" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="project project-reverse" id="project-2">
+      <div class="wrap project-inner">
+        <div class="project-text">
+          <span class="tag">Web · React · Express</span>
+          <h2>Overdue</h2>
+          <p class="project-desc">A Letterboxd-style social reading tracker. Readers log and review books, keep a dated reading diary, a to-read shelf and live progress, and build lists to share, over a catalog of 557 books with real covers from Open Library.</p>
+          <ul class="feature-list">
+                <li>Reviews and ratings that other readers can like and comment on</li>
+                <li>To-read, currently-reading and finished shelves, a reading diary, per-user stats and reading challenges</li>
+                <li>Custom lists, follows, an activity feed and a threaded discussion board</li>
+                <li>Browse, search, author pages, similar-book recommendations and a "Surprise me" pick</li>
+                <li>JWT auth with bcrypt; React, Vite, Tailwind and an Express + SQLite API in TypeScript</li>
+            </ul>
+          <div class="card-links"><a class="btn btn-primary" href="https://overduebook.com" target="_blank" rel="noopener">Visit overduebook.com &rarr;</a></div>
+        </div>
+        <div class="project-media"><img src="images/book-review.png" alt="Overdue home page with a Popular Right Now row of book covers" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="project" id="project-3">
+      <div class="wrap project-inner">
+        <div class="project-text">
+          <span class="tag">Web · Next.js · Claude API</span>
+          <h2>Lab Result Explainer</h2>
+          <p class="project-desc">Turns a lab report PDF into a plain-language page a patient can actually read. AI does the transcribing and drafting, but two human gates sit in front of everything a patient sees, and it never diagnoses or gives treatment advice. Runs on synthetic data only.</p>
+          <ul class="feature-list">
+                <li>A provider uploads a PDF, Claude extracts the values, and the provider verifies them before any are used</li>
+                <li>Deterministic code, not AI, classifies every result against the report's own printed ranges, backed by golden test fixtures</li>
+                <li>The explanation is grounded in MedlinePlus content and must be approved by the provider before it is sent</li>
+                <li>Critical results are held for a human call instead of being explained</li>
+                <li>Patient page is a date-of-birth-gated link with range markers, text-size toggle, print and an ask-a-question form, with no AI at view time</li>
+                <li>Next.js, TypeScript, Supabase, Vitest and Playwright</li>
+            </ul>
+        </div>
+        <div class="project-media"><img src="images/lab-results.png" alt="Patient results page explaining a cholesterol result in plain language" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="project project-reverse" id="project-4">
+      <div class="wrap project-inner">
+        <div class="project-text">
+          <span class="tag">Mobile · React · Capacitor</span>
+          <h2>Motivation</h2>
+          <p class="project-desc">A gentle task app for people with ADHD or depression. Finishing small tasks earns XP, coins and streaks that grow a pixel-art companion you collect, dress up and build a room for. There is no guilt or punishment anywhere in the design.</p>
+          <ul class="feature-list">
+                <li>Streak-freeze tokens and welcome-back bonuses instead of penalties, plus a "Just one thing" focus mode and a low-pressure Someday list</li>
+                <li>Eight companion species with color variants, outfits, treats and toys; a new companion unlocks every five levels</li>
+                <li>Decor shop on a separate coin currency so spending never lowers your level, plus a catch minigame and about 40 achievements</li>
+                <li>Activity heatmap, weekly recap and honest "this is your record, not a score" reflections</li>
+                <li>Streak-aware reminders, multiple profiles on one device and JSON backup; all data stays on the device</li>
+                <li>React, TypeScript, Vite and Capacitor for iOS and Android</li>
+            </ul>
+        </div>
+        <div class="project-media card-media-phones"><img src="images/motivation-app.png" alt="Motivation app room view with a pixel-art fox companion and a 12-day streak" loading="lazy"><img src="images/motivation-app-tasks.png" alt="Motivation app task list with daily routine and tags" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="project" id="project-5">
+      <div class="wrap project-inner">
+        <div class="project-text">
+          <span class="tag">Web · Node · Express</span>
+          <h2>Fieldsheet</h2>
+          <p class="project-desc">A trades directory built around real work instead of claims. Electricians, plumbers, roofers and other pros build a photo portfolio profile, get found through search, and receive booking requests they manage from their own dashboard.</p>
+          <ul class="feature-list">
+                <li>Searchable directory with filters for ten trades</li>
+                <li>Pro profiles with bio, license number, avatar and a portfolio of up to 12 captioned photos</li>
+                <li>Booking requests tracked as new, contacted, booked or declined, with an email notification to the pro</li>
+                <li>Account signup and login with bcrypt and SQLite-backed sessions, and a dark/light theme</li>
+                <li>Express, better-sqlite3 and multer with a framework-free front end</li>
+            </ul>
+          <div class="card-links"><a class="btn btn-primary" href="https://field-sheet.com" target="_blank" rel="noopener">Visit field-sheet.com &rarr;</a></div>
+        </div>
+        <div class="project-media"><img src="images/trade-portfolio.png" alt="Fieldsheet directory home page with trade filters and job cards" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="project project-reverse" id="project-6">
+      <div class="wrap project-inner">
+        <div class="project-text">
+          <span class="tag">Web · Next.js</span>
+          <h2>Kept Recipes</h2>
+          <p class="project-desc">Strips the life story and ads out of recipe sites. Paste any recipe link and get a clean card with the photo, times, servings, a tick-off ingredient list and numbered steps, with no AI and no API keys.</p>
+          <ul class="feature-list">
+                <li>Deterministic extraction from the page's schema.org recipe data via cheerio</li>
+                <li>A hardened server-side fetcher: SSRF protection, redirect re-validation, timeout and size cap</li>
+                <li>Saved recipes kept privately on the device, synced across tabs</li>
+                <li>Next.js, React, TypeScript and Tailwind</li>
+            </ul>
+          <div class="card-links"><a class="btn btn-primary" href="https://kept-recipes.com" target="_blank" rel="noopener">Visit kept-recipes.com &rarr;</a></div>
+        </div>
+        <div class="project-media"><img src="images/recipe-site.png" alt="Kept Recipes showing an extracted guacamole recipe card" loading="lazy"></div>
+      </div>
+    </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Get in touch</h2>
+      <p>Interested in working together or just want to say hi?</p>
+      <a class="btn btn-primary" href="mailto:cjwallin5@gmail.com">cjwallin5@gmail.com</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; <span id="year"></span> Caleb Wallin. Built with plain HTML, CSS, and JS.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
