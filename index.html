@@ -4,8 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="dark">
-<meta name="theme-color" content="#060b18">
-<title>Caleb Wallin — Portfolio</title>
+<meta name="theme-color" content="#141311">
+<title>Caleb Wallin, Software Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,85 +27,51 @@
 <main>
   <section id="top" class="hero">
     <div class="wrap">
-      <p class="eyebrow">Software Developer</p>
-      <h1>I build small, focused apps end to end.</h1>
-      <p class="hero-sub">From a full desktop DAW with VST hosting to a gamified task tracker, I like taking
-        a project from idea to something that actually runs. Below is a selection of what I've been working on.</p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">See my work</a>
-        <a href="#contact" class="btn btn-ghost">Get in touch</a>
-      </div>
+      <p class="eyebrow">Caleb Wallin, software developer</p>
+      <h1>I like building software all the way through, until it actually runs.</h1>
+      <p class="hero-sub">I'm a developer who works across the stack, from C++ systems code to full-stack web apps,
+        mobile and AI-powered features, with a focus on reliability, security and clean, tested code.</p>
+      <p class="hero-links"><a href="#about">About me</a> <a href="#contact">Email me</a></p>
     </div>
   </section>
 
   <section id="about" class="about">
     <div class="wrap">
       <h2>About</h2>
-      <p class="about-lead">I'm a developer who likes shipping complete, working software rather than stopping at prototypes.
-        My projects range from a native audio workstation with out-of-process plugin hosting to full-stack web apps
-        that are live today, and a phone-first app designed around people who find productivity tools stressful.</p>
-      <p>Across all of them I care about the details that make software feel finished: handling failure
-        gracefully, protecting user data, writing tests for the parts that must be right, and designing with the
-        person using it in mind instead of adding complexity the project doesn't need.</p>
+      <p class="about-lead">I'd rather finish something small than leave something big half-built. I'm comfortable working at
+        every layer, from low-level, real-time systems code to polished web and mobile front ends, and I like taking
+        a piece of software from idea to something people can actually use.</p>
+      <p>The parts I care about most are the ones users only notice when they're missing: failing gracefully,
+        protecting their data, and testing the code that has to be right.</p>
 
-      <div class="skills">
-        <div class="skill-group">
-          <h3>Full-stack web</h3>
-          <ul class="chips">
-            <li>TypeScript</li><li>React</li><li>Next.js</li><li>Vite</li><li>Tailwind CSS</li>
-            <li>Node.js</li><li>Express</li><li>REST APIs</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h3>Data &amp; auth</h3>
-          <ul class="chips">
-            <li>SQLite</li><li>Postgres / Supabase</li><li>JWT &amp; sessions</li><li>bcrypt</li>
-            <li>File uploads</li><li>Email (SMTP)</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h3>Systems &amp; audio</h3>
-          <ul class="chips">
-            <li>C++</li><li>JUCE</li><li>Real-time DSP</li><li>Multi-process architecture</li>
-            <li>VST3 / AU hosting</li><li>CMake</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h3>AI integration</h3>
-          <ul class="chips">
-            <li>Claude API</li><li>Vercel AI SDK</li><li>Schema-validated output (Zod)</li>
-            <li>Grounded generation</li><li>Human-in-the-loop design</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h3>Mobile &amp; product</h3>
-          <ul class="chips">
-            <li>Capacitor (iOS / Android)</li><li>PWA</li><li>Local notifications</li>
-            <li>Gamification</li><li>Accessibility-minded UX</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h3>Quality &amp; shipping</h3>
-          <ul class="chips">
-            <li>Vitest</li><li>Playwright</li><li>JUCE unit tests</li><li>SSRF-safe fetching</li>
-            <li>Railway deployment</li><li>Git</li>
-          </ul>
-        </div>
-      </div>
+      <dl class="skills">
+        <dt>Full-stack web</dt>
+        <dd>TypeScript, React, Next.js, Vite, Tailwind CSS, Node.js, Express, REST APIs</dd>
+        <dt>Data &amp; auth</dt>
+        <dd>SQLite, Postgres / Supabase, JWT &amp; sessions, bcrypt, File uploads, Email (SMTP)</dd>
+        <dt>Systems &amp; audio</dt>
+        <dd>C++, JUCE, Real-time DSP, Multi-process architecture, VST3 / AU hosting, CMake</dd>
+        <dt>AI integration</dt>
+        <dd>Claude API, Vercel AI SDK, Schema-validated output (Zod), Grounded generation, Human-in-the-loop design</dd>
+        <dt>Mobile &amp; product</dt>
+        <dd>Capacitor (iOS / Android), PWA, Local notifications, Gamification, Accessibility-minded UX</dd>
+        <dt>Quality &amp; shipping</dt>
+        <dd>Vitest, Playwright, JUCE unit tests, SSRF-safe fetching, Railway deployment, Git</dd>
+      </dl>
     </div>
   </section>
 
   <section id="projects" class="projects">
     <div class="wrap">
       <h2>Projects</h2>
-      <p class="section-sub">A mix of desktop, web, and mobile apps.</p>
+      <p class="section-sub">Desktop, web and mobile.</p>
     </div>
   </section>
 
     <section class="project" id="project-1">
       <div class="wrap project-inner">
         <div class="project-text">
-          <span class="tag">Desktop · C++ · JUCE</span>
+          <span class="tag"><b>01</b> Desktop · C++ · JUCE</span>
           <h2>MiniDAW</h2>
           <p class="project-desc">A digital audio workstation written from scratch in C++ and JUCE. It records, sequences, mixes and masters audio, MIDI and drum tracks, and hosts third-party VST3/AU plugins in a separate process so a crashing plugin can't take the project down with it.</p>
           <ul class="feature-list">
@@ -121,7 +90,7 @@
     <section class="project project-reverse" id="project-2">
       <div class="wrap project-inner">
         <div class="project-text">
-          <span class="tag">Web · React · Express</span>
+          <span class="tag"><b>02</b> Web · React · Express</span>
           <h2>Overdue</h2>
           <p class="project-desc">A Letterboxd-style social reading tracker. Readers log and review books, keep a dated reading diary, a to-read shelf and live progress, and build lists to share, over a catalog of 557 books with real covers from Open Library.</p>
           <ul class="feature-list">
@@ -131,7 +100,7 @@
                 <li>Browse, search, author pages, similar-book recommendations and a "Surprise me" pick</li>
                 <li>JWT auth with bcrypt; React, Vite, Tailwind and an Express + SQLite API in TypeScript</li>
             </ul>
-          <div class="card-links"><a class="btn btn-primary" href="https://overduebook.com" target="_blank" rel="noopener">Visit overduebook.com &rarr;</a></div>
+          <div class="card-links"><a class="visit" href="https://overduebook.com" target="_blank" rel="noopener">Visit overduebook.com &rarr;</a></div>
         </div>
         <div class="project-media"><img src="images/book-review.png" alt="Overdue home page with a Popular Right Now row of book covers" loading="lazy"></div>
       </div>
@@ -140,7 +109,7 @@
     <section class="project" id="project-3">
       <div class="wrap project-inner">
         <div class="project-text">
-          <span class="tag">Web · Next.js · Claude API</span>
+          <span class="tag"><b>03</b> Web · Next.js · Claude API</span>
           <h2>Lab Result Explainer</h2>
           <p class="project-desc">Turns a lab report PDF into a plain-language page a patient can actually read. AI does the transcribing and drafting, but two human gates sit in front of everything a patient sees, and it never diagnoses or gives treatment advice. Runs on synthetic data only.</p>
           <ul class="feature-list">
@@ -159,7 +128,7 @@
     <section class="project project-reverse" id="project-4">
       <div class="wrap project-inner">
         <div class="project-text">
-          <span class="tag">Mobile · React · Capacitor</span>
+          <span class="tag"><b>04</b> Mobile · React · Capacitor</span>
           <h2>Motivation</h2>
           <p class="project-desc">A gentle task app for people with ADHD or depression. Finishing small tasks earns XP, coins and streaks that grow a pixel-art companion you collect, dress up and build a room for. There is no guilt or punishment anywhere in the design.</p>
           <ul class="feature-list">
@@ -178,7 +147,7 @@
     <section class="project" id="project-5">
       <div class="wrap project-inner">
         <div class="project-text">
-          <span class="tag">Web · Node · Express</span>
+          <span class="tag"><b>05</b> Web · Node · Express</span>
           <h2>Fieldsheet</h2>
           <p class="project-desc">A trades directory built around real work instead of claims. Electricians, plumbers, roofers and other pros build a photo portfolio profile, get found through search, and receive booking requests they manage from their own dashboard.</p>
           <ul class="feature-list">
@@ -188,7 +157,7 @@
                 <li>Account signup and login with bcrypt and SQLite-backed sessions, and a dark/light theme</li>
                 <li>Express, better-sqlite3 and multer with a framework-free front end</li>
             </ul>
-          <div class="card-links"><a class="btn btn-primary" href="https://field-sheet.com" target="_blank" rel="noopener">Visit field-sheet.com &rarr;</a></div>
+          <div class="card-links"><a class="visit" href="https://field-sheet.com" target="_blank" rel="noopener">Visit field-sheet.com &rarr;</a></div>
         </div>
         <div class="project-media"><img src="images/trade-portfolio.png" alt="Fieldsheet directory home page with trade filters and job cards" loading="lazy"></div>
       </div>
@@ -197,7 +166,7 @@
     <section class="project project-reverse" id="project-6">
       <div class="wrap project-inner">
         <div class="project-text">
-          <span class="tag">Web · Next.js</span>
+          <span class="tag"><b>06</b> Web · Next.js</span>
           <h2>Kept Recipes</h2>
           <p class="project-desc">Strips the life story and ads out of recipe sites. Paste any recipe link and get a clean card with the photo, times, servings, a tick-off ingredient list and numbered steps, with no AI and no API keys.</p>
           <ul class="feature-list">
@@ -206,7 +175,7 @@
                 <li>Saved recipes kept privately on the device, synced across tabs</li>
                 <li>Next.js, React, TypeScript and Tailwind</li>
             </ul>
-          <div class="card-links"><a class="btn btn-primary" href="https://kept-recipes.com" target="_blank" rel="noopener">Visit kept-recipes.com &rarr;</a></div>
+          <div class="card-links"><a class="visit" href="https://kept-recipes.com" target="_blank" rel="noopener">Visit kept-recipes.com &rarr;</a></div>
         </div>
         <div class="project-media"><img src="images/recipe-site.png" alt="Kept Recipes showing an extracted guacamole recipe card" loading="lazy"></div>
       </div>
@@ -214,16 +183,16 @@
 
   <section id="contact" class="contact">
     <div class="wrap">
-      <h2>Get in touch</h2>
-      <p>Interested in working together or just want to say hi?</p>
-      <a class="btn btn-primary" href="mailto:cjwallin5@gmail.com">cjwallin5@gmail.com</a>
+      <h2>Contact</h2>
+      <p>Want to work together, or just talk shop? Email me.</p>
+      <a class="mail" href="mailto:cjwallin5@gmail.com">cjwallin5@gmail.com</a>
     </div>
   </section>
 </main>
 
 <footer class="site-footer">
   <div class="wrap">
-    <p>&copy; <span id="year"></span> Caleb Wallin. Built with plain HTML, CSS, and JS.</p>
+    <p>&copy; <span id="year"></span> Caleb Wallin. Plain HTML, CSS and JS.</p>
   </div>
 </footer>
 
