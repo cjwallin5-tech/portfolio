@@ -207,3 +207,5 @@ h2 {
 .about.about-first { padding-top: 96px; }
 @media (max-width: 720px) { .about.about-first { padding-top: 56px; } }
 .about .hero-links { color: var(--ink); margin-bottom: 28px; }
+.about h1 { border-top: 0; padding-top: 0; }
+.about .hero-links { margin: 32px 0 0; }
